@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    TestNG Suite Configuration — Asirvad OGL Automation
+    Run all tests:  mvn test
+    Run smoke only: mvn test -Dgroups=smoke
+    Run parallel:   set parallel="methods" thread-count="4" (requires device farm)
+-->
+<suite name="AsirvadOGL_Suite" verbose="1" thread-count="1">
+
+    <!-- ═══════════════════════════════════════════
+         Smoke Suite — Critical path only
+         Run before every release / deployment
+    ════════════════════════════════════════════════ -->
+    <test name="Smoke_Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.asirvadogl.tests.LoginTest"/>
+            <class name="com.asirvadogl.tests.RegisterTest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════
+         Regression Suite — Full coverage
+    ════════════════════════════════════════════════ -->
+    <test name="Regression_Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.asirvadogl.tests.LoginTest"/>
+            <class name="com.asirvadogl.tests.RegisterTest"/>
+        </classes>
+    </test>
+
+    <!-- ═══════════════════════════════════════════
+         Gold Loan E2E Suite (disabled until implemented)
+         Set enabled="true" in each @Test to activate
+    ════════════════════════════════════════════════ -->
+    <test name="GoldLoan_E2E_Tests" enabled="false">
+        <classes>
+            <class name="com.asirvadogl.tests.GoldLoanTest"/>
+        </classes>
+    </test>
+
+</suite>
