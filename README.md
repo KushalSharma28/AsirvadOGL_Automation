@@ -44,15 +44,15 @@ AsirvadOGL_Framework/                    ← Eclipse project root
 
 ## Prerequisites
 
-| Tool            | Version        | Install                               |
+| Tool            | Version       | Install                               |
 |-----------------|---------------|---------------------------------------|
-| Java JDK        | 11+           | https://adoptium.net                  |
+| Java JDK        | 25.0.3        | https://adoptium.net                  |
 | Maven           | 3.9+          | https://maven.apache.org/download.cgi |
-| Node.js         | 18+           | https://nodejs.org                    |
-| Appium Server   | 2.x           | `npm install -g appium`               |
+| Node.js         | 24.15.0       | https://nodejs.org                    |
+| Appium Server   | 3.4.2         | `npm install -g appium`               |
 | UiAutomator2    | latest        | `appium driver install uiautomator2`  |
 | Android SDK     | API 28+       | Via Android Studio                    |
-| Eclipse IDE     | 2024-03+      | https://www.eclipse.org               |
+| Eclipse IDE     | 2026-03+      | https://www.eclipse.org               |
 
 ---
 
