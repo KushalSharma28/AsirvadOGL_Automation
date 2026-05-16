@@ -1,6 +1,6 @@
 # Asirvad OGL — Appium Mobile Automation Framework
 
-> **Stack:** Appium 9.x · Java 11 · Maven · TestNG 7 · Page Object Model + Page Factory  
+> **Stack:** Appium 9.x · Java 25 · Maven · TestNG 7 · Page Object Model + Page Factory  
 > **Target App:** [Asirvad OGL](https://play.google.com/store/apps/details?id=com.asirvadogl) (Android)
 
 ---
